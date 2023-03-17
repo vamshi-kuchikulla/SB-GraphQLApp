@@ -1,0 +1,19 @@
+schema{
+query: Query
+}
+
+type Query{
+allStudents: [Student]
+student(rollNumber: String): Student
+}
+
+type Student{
+  id: String
+  rollNumber:String
+  fullName:String
+  email:String
+  department:String
+  mobile:String
+  age: String
+  nationality:String
+}
